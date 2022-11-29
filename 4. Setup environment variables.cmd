@@ -1,2 +1,2 @@
 echo Setting environment varibles to PYTHONPATH...
-SETX PYTHONPATH %cd%\models;%cd%\models\research;
+SETX PYTHONPATH "%cd%\models;%cd%\models\research;"

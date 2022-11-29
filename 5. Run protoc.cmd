@@ -1,6 +1,7 @@
 echo Run protoc...
+SET PROTOCPATH=%cd%\protoc\bin
 cd models
 cd research
-%PROTOC_PATH%protoc.exe object_detection\protos\*.proto --python_out=.
+"%PROTOCPATH%\protoc.exe" object_detection\protos\*.proto --python_out=.
 cd.. 
 cd..
