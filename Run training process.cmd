@@ -14,7 +14,7 @@ SET CONFIG_PATH=%cd%\models\research\object_detection\configs\tf2\
 SET YYYYMMDD=%DATE:~9,4%-%DATE:~6,2%-%DATE:~3,2%
 SET /a _rand=(%RANDOM%*500/32768)+1
 SET MODEL_PATH=%cd%\content\trained_models\%YYYYMMDD%\
-
+SET CUDA_DIRECTORY="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.6"
 
 
 RMDIR %cd%\content\exported /S /Q 
@@ -34,8 +34,8 @@ python prepare_model_training.py %CLOUD_ANNOTATIONS_MOUNT% %ANNOTATIONS_JSON_PAT
 cd models\research
 
 @echo off
+SET XLA_FLAGS=--xla_gpu_cuda_data_dir=%CUDA_DIRECTORY%
 SET /p TRAIN_STEPS="Set number of training steps: "
-
 python -m object_detection.model_main_tf2 --pipeline_config_path=%DATA_PATH%\pipeline.config --model_dir=%OUTPUT_PATH% --num_train_steps=%TRAIN_STEPS% --num_eval_steps=100 --alsologtostderr
 
 REM python -m object_detection.model_main_tf2 --pipeline_config_path=%DATA_PATH%\pipeline.config --model_dir=%OUTPUT_PATH% --checkpoint_dir=%CHECKPOINT_PATH% --num_train_steps=%TRAIN_STEPS% --sample_1_of_n_eval_examples=1 --run_once=True  --alsologtostderr
