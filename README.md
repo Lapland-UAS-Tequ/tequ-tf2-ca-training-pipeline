@@ -30,7 +30,7 @@ Colab notebook https://colab.research.google.com/github/cloud-annotations/google
 | CUDA          | 11.6.0_511.23 | https://developer.nvidia.com/cuda-downloads |
 | cuDNN         | 8.3.2.44      | https://developer.nvidia.com/cudnn |
 | Protoc        | 3.19.4        | https://developers.google.com/protocol-buffers/docs/downloads |
-| Python        | 3.10.2        | https://www.python.org/downloads/release/python-379/ |
+| Python        | 3.10.2        | https://www.python.org/downloads/release/python-3108/ |
 | Git           | 2.35.1        | https://git-scm.com/downloads |
 | GPU drivers   | Supported driver for Cuda 11 | https://www.nvidia.com/Download/index.aspx?lang=en-us |
 
