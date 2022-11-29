@@ -6,7 +6,9 @@ https://www.tequ.fi/en/project-bank/fish-iot/
 
 # Description 
 
-This guide is for configuring your Windows machine to train Tensorflow saved models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://cloud.annotations.ai/) or converted to Cloud annotations format.
+This guide is for configuring your Windows machine to train Tensorflow saved models. Guide assumes that source image files are annotated with Cloud Annotations tool (https://github.com/cloud-annotations/cloud-annotations) or are converted into Cloud annotations format.
+
+Cloud Annotations tool is not hosted anymore at (https://cloud.annotations.ai/), so you need to setup your own Cloud annotations using instructions from its Github repository. Another way at the moment is to annotate using another tool that supports Pascal VOC format and convert annotations to Cloud Annotations format using a convert script.
 
 Converter scripts can be found from repository:
 
