@@ -14,7 +14,7 @@ Converter scripts can be found from repository:
 
 https://github.com/Lapland-UAS-Tequ/Object-Detection-Tools
 
-6.3.2023 ==> New site https://vision.skills.network/ is hosting Cloud Annotations based tool and can be used to make compatible annotations.
+6.3.2023 ==> New site https://vision.skills.network/ is hosting Cloud Annotations based tool and it might be possible to use it to create compatible annotations. Not tested.
 
 Colab notebook https://colab.research.google.com/github/cloud-annotations/google-colab-training/blob/master/object_detection.ipynb has been used as template for this pipeline and functionality of this notebook has been transferred to work offline on Windows machine.
 
